@@ -103,3 +103,17 @@ gsap.to(".floating-coin", {
     ease: "power1.inOut",
     stagger: 0.5
 });
+
+gsap.from(".eternal-section h2, .eternal-section p, .eternal-section .eternal-card", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out",
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".eternal-section",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none"
+    }
+});
