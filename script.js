@@ -81,3 +81,25 @@ gsap.from(".phone-img", {
         toggleActions: "play none none none"
     }
 });
+
+gsap.from(".zomato-gold-section h2, .zomato-gold-section p, .zomato-gold-section .benefit-card", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out",
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".zomato-gold-section",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none"
+    }
+});
+
+gsap.to(".floating-coin", {
+    y: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+    stagger: 0.5
+});
